@@ -6,9 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 6</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .container {
+        max-width: 478px;
+        margin: 0 auto;
+      }
+      .list-ul {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        flex-wrap: wrap;
+        
+      }
+      .list-ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #000;
+        transition: 250ms;
+      }
+
+      .list-ul li a:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
-    <ul>
+    <ul class="list-ul container">
       <li><a href="task-01.html">Task 1</a></li>
       <li><a href="task-02.html">Task 2</a></li>
       <li><a href="task-03.html">Task 3</a></li>
