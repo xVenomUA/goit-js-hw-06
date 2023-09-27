@@ -1,15 +1,11 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
 
-const list = document.getElementById("ingredients"); 
-ingredients.forEach((element) => { 
-  const each = document.createElement("li"); 
-  each.textContent = element;
-  list.append(each);
-})
+const list = document.getElementById("ingredients");
+list.innerHTML = ingredients.map((element) => `<li>${element}</li>`).join("");
